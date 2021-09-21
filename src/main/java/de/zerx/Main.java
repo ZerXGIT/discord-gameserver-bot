@@ -20,7 +20,7 @@ public class Main {
 
     public static void main(String[] args) throws LoginException {
 
-        JDA jda = JDABuilder.createDefault("ODg5MTE5NTM2ODI0MDc4Mzk3.YUcnGA.roj3QZVlPT1alPQy7NZZM4vHxTo")
+        JDA jda = JDABuilder.createDefault("")
                 .setStatus(OnlineStatus.DO_NOT_DISTURB)
                 .addEventListeners(new Command())
                 .build();
