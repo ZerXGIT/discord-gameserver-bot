@@ -1,9 +1,14 @@
 package de.zerx;
 
+import de.zerx.commands.Command;
 import net.dv8tion.jda.api.JDA;
 import net.dv8tion.jda.api.JDABuilder;
+import net.dv8tion.jda.api.OnlineStatus;
+import org.slf4j.Logger;
 
 import javax.security.auth.login.LoginException;
+import java.io.InputStreamReader;
+import java.util.Scanner;
 
 /**
  * Created by Till O. aka. ZerX
@@ -14,7 +19,13 @@ import javax.security.auth.login.LoginException;
 public class Main {
 
     public static void main(String[] args) throws LoginException {
-        JDA jda = JDABuilder.createDefault("").build();
+
+        JDA jda = JDABuilder.createDefault("ODg5MTE5NTM2ODI0MDc4Mzk3.YUcnGA.DBRF0EhDe7QX0uXcIQjcZeSWpGo")
+                .setStatus(OnlineStatus.DO_NOT_DISTURB)
+                .addEventListeners(new Command())
+                .build();
+
+
 
     }
 
