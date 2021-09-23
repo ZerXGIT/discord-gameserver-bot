@@ -2,13 +2,9 @@ package de.zerx.commands;
 
 import net.dv8tion.jda.api.entities.Member;
 import net.dv8tion.jda.api.entities.TextChannel;
-import net.dv8tion.jda.api.events.GenericEvent;
 import net.dv8tion.jda.api.events.message.MessageReceivedEvent;
-import net.dv8tion.jda.api.hooks.EventListener;
 import net.dv8tion.jda.api.hooks.ListenerAdapter;
-import org.jetbrains.annotations.NotNull;
 
-import java.util.Arrays;
 
 /**
  * Created by Till O. aka. ZerX
@@ -28,13 +24,11 @@ public class Command extends ListenerAdapter {
         TextChannel channel = event.getTextChannel();
         Member member = event.getMember();
 
-        if(channel.getId().equals("889122544312004658"))
-        if(message.startsWith(prefix)){
-            if(args[0].equalsIgnoreCase("help")) {
-                channel.sendMessage("Help").queue();
+        if (channel.getId().equals("889122544312004658"))
+            if (message.startsWith(prefix)) {
+                if (args[0].equalsIgnoreCase("help")) {
+                    channel.sendMessage("Help").queue();
+                }
             }
-
-        }
-
     }
 }
