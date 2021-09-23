@@ -21,7 +21,5 @@ public class Main {
                 .setStatus(OnlineStatus.DO_NOT_DISTURB)
                 .addEventListeners(new Command())
                 .build();
-
-
     }
 }
