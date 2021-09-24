@@ -10,7 +10,7 @@ import net.dv8tion.jda.api.hooks.ListenerAdapter;
  * Created by Till O. aka. ZerX
  * <p>
  * Project name: Discord-GameServer-Bot<p>
- * This file is created at 21.09.2021 10:39
+ * This file was created at 21.09.2021 10:39
  */
 public class Command extends ListenerAdapter {
 

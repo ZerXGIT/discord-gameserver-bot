@@ -4,7 +4,7 @@ package de.zerx.games.utils;
  * Created by Till O. aka. ZerX
  * <p>
  * Project name: Discord-GameServer-Bot<p>
- * This file is created at 23.09.2021 23:19
+ * This file was created at 23.09.2021 23:19
  */
 public class GameserverObject {
 
