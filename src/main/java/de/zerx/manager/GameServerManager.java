@@ -1,6 +1,6 @@
 package de.zerx.manager;
 
-import de.zerx.games.utils.GameserverObject;
+import de.zerx.games.GameserverObject;
 
 import java.util.HashMap;
 
